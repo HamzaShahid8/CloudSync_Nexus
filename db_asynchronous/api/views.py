@@ -18,7 +18,7 @@ def get_posts():
     return list(Post.objects.select_related('user').values())
 
 
-async def dashboard(request):
+async def dashboards(request):
     logger.info('Dashboard')
     
     try:
